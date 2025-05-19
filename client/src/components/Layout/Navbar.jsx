@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="bg-[#121239] text-white">
       <nav className="relative container mx-auto flex items-center justify-between py-4 px-8 font-Poppins">
         <div className="z-10">
-          <Link to="/" className="font-medium text-2xl">
+          <Link to="/" className="font-medium text-lg">
             Reginald Men
           </Link>
         </div>
