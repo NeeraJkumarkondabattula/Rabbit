@@ -31,7 +31,7 @@ const Topbar = () => {
   }, [index, items.length]);
 
   return (
-    <div className="bg-red-700 text-white font-Poppins">
+    <div className="bg-[#121212] text-white font-Poppins">
       <div className="container mx-auto flex justify-between items-center py-3 px-8">
         {/* Left social icons */}
         <div className="hidden md:flex items-center space-x-4">
