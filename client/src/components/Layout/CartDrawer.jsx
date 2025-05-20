@@ -8,9 +8,10 @@ const CartDrawer = ({ drawerOpen, toggleDrawerOpen }) => {
         drawerOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <div className="flex justify-end p-4">
+      <div className="flex items-center justify-between p-4 bg-[#121239] text-white">
+        <h1 className="text-lg font-semibold">Your Cart</h1>
         <button onClick={toggleDrawerOpen}>
-          <IoMdClose className="h-6 w-6 text-black" />
+          <IoMdClose className="h-6 w-6 " />
         </button>
       </div>
     </div>
