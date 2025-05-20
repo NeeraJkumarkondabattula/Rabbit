@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       Poppins: ['"Poppins"', "sans-serif"],
+      Tiro: ["Tiro Devanagari Hindi", "sans-serif"],
     },
   },
   plugins: [],

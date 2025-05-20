@@ -9,9 +9,12 @@ import {
 const Navbar = () => {
   return (
     <div className="bg-[#121239] text-white">
-      <nav className="relative container mx-auto flex items-center justify-between py-2 px-8 font-Poppins">
+      <nav className="relative container mx-auto flex items-center justify-between py-2 md:py-3 px-8 ">
         <div className="z-10 w-[100px]">
-          <Link to="/" className="font-semibold text-lg leading-none uppercase">
+          <Link
+            to="/"
+            className="font-medium text-lg leading-none uppercase font-Tiro"
+          >
             Reginald Men
           </Link>
         </div>
