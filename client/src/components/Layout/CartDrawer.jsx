@@ -14,6 +14,19 @@ const CartDrawer = ({ drawerOpen, toggleDrawerOpen }) => {
           <IoMdClose className="h-6 w-6 " />
         </button>
       </div>
+
+      <div className="flex-grow h-full p-4 overflow-y-auto">
+        <h2>hell</h2>
+      </div>
+
+      <div className="p-4 sticky bottom-0">
+        <button className="bg-black text-white rounded w-full py-3 transition hover:bg-gray-800">
+          Checkout
+        </button>
+        <p className="tracking-tighter text-gray-800 text-xs text-center py-1">
+          Shipping, Taxes and discount codes calculated at checkout.
+        </p>
+      </div>
     </div>
   );
 };
