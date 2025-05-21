@@ -8,18 +8,18 @@ import { IoCallOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="border-t py-12 bg-[#121212] text-white">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 px-8">
-        <div>
-          <h3 className="text-lg text-whi mb-4">Newsletter</h3>
-          <p className="text-gray-500 mb-4 text-sm">
+    <footer className=" py-12 bg-[#121212] text-white">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 px-8">
+        <div className="col-span-4">
+          <h3 className="text-2xl text-white mb-4">Newsletter</h3>
+          <p className="text-gray-500 mb-6 text-sm">
             Be the first to hear about new products, exclusive events, and
             online offers.
           </p>
           <p className="text-sm font-medium">
             Sign up and get 10% off your first order.
           </p>
-          <form className="flex mt-2">
+          <form className="flex mt-4">
             <input
               type="email"
               placeholder="Enter your email"
@@ -30,8 +30,8 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div>
-          <h3 className="text-lg text-white mb-4">Shop</h3>
+        <div className="col-span-2">
+          <h3 className="text-2xl text-white mb-4">Shop</h3>
           <ul className="space-y-2 text-gray-500 text-sm">
             <li>
               <Link to="/" className="hover:text-white transition-colors">
@@ -50,18 +50,18 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/" className="hover:text-white transition-colors">
-                Lipbalm
+                Moisturizer
               </Link>
             </li>
             <li>
               <Link to="/" className="hover:text-white transition-colors">
-                Moisturizer
+                Lipbalm
               </Link>
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="text-lg text-white mb-4">Support</h3>
+        <div className="col-span-3">
+          <h3 className="text-2xl text-white mb-4">Support</h3>
           <ul className="space-y-2 text-gray-500 text-sm">
             <li>
               <Link to="/" className="hover:text-white transition-colors">
@@ -90,8 +90,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="text-lg text-white mb-2">Follow Us</h3>
+        <div className="col-span-3">
+          <h3 className="text-2xl text-white mb-4">Follow Us</h3>
           <ul className="space-x-2 text-gray-500 flex text-sm">
             <li>
               <Link
@@ -115,9 +115,9 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <div className=" items-center text-gray-500 mt-8">
-            <h3 className="text-lg text-white mb-2">Contact Us</h3>
-            <Link to="mailt0:info@reginaldmen.com" className="block">
+          <div className=" items-center text-gray-500 mt-6">
+            <h3 className="text-2xl text-white mb-4">Contact Us</h3>
+            <Link to="mailto:info@reginaldmen.com" className="block">
               <MdOutlineMail className="w-6 h-5 inline-block text-sm" />{" "}
               info@reginaldmen.com
             </Link>
@@ -127,6 +127,11 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto pt-12 px-4 py-2">
+        <p className="tracking-tighter text-sm text-gray-300 text-center">
+          © 2025 Reginald Men, All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
