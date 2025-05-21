@@ -108,23 +108,40 @@ const Navbar = () => {
         </div>
         <div className="p-4">
           <nav className="flex flex-col gap-4">
-            <Link to="/" className="block text-black hover:text-gray-800">
+            <Link
+              to="/"
+              className="block text-black hover:text-gray-800"
+              onClick={toggleNavDrawerOpen}
+            >
               Home
             </Link>
-            <Link to="/shop" className="block text-black hover:text-gray-800">
+            <Link
+              to="/shop"
+              className="block text-black hover:text-gray-800"
+              onClick={toggleNavDrawerOpen}
+            >
               Shop
             </Link>
-            <Link to="/track" className="block text-black hover:text-gray-800">
+            <Link
+              to="/track"
+              className="block text-black hover:text-gray-800"
+              onClick={toggleNavDrawerOpen}
+            >
               Track
             </Link>
 
             <Link
               to="/contact"
               className="block text-black hover:text-gray-800"
+              onClick={toggleNavDrawerOpen}
             >
               Contact
             </Link>
-            <Link to="/about" className="block text-black hover:text-gray-800">
+            <Link
+              to="/about"
+              className="block text-black hover:text-gray-800"
+              onClick={toggleNavDrawerOpen}
+            >
               About
             </Link>
           </nav>
