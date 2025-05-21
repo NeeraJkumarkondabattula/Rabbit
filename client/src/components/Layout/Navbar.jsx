@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
+
 import {
   HiBars3BottomRight,
   HiOutlineShoppingBag,
@@ -9,9 +11,14 @@ import CartDrawer from "./CartDrawer";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [navDraweropen, setNavDrawerOpen] = useState(false);
 
   const toggleDrawerOpen = () => {
     setDrawerOpen(!drawerOpen);
+  };
+
+  const toggleNavDrawerOpen = () => {
+    setNavDrawerOpen(!navDraweropen);
   };
 
   return (
@@ -65,7 +72,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center space-x-2 z-10">
+        <div className="flex items-center space-x-4 z-10">
           <Link to="/profile" className="hover:text-black">
             <HiOutlineUser className="h-6 w-6 text-white" />
           </Link>
@@ -78,12 +85,51 @@ const Navbar = () => {
               5
             </span>
           </button>
-          <button className="md:hidden hover:text-black">
+          <button
+            onClick={toggleNavDrawerOpen}
+            className="md:hidden hover:text-black"
+          >
             <HiBars3BottomRight className="h-6 w-6 text-white" />
           </button>
         </div>
       </nav>
       <CartDrawer drawerOpen={drawerOpen} toggleDrawerOpen={toggleDrawerOpen} />
+
+      <div
+        className={`w-full sm:w-1/2 md:w-1/4 shadow-lg h-full fixed top-0 right-0 transform transition-transform duration-300 bg-white z-10 ${
+          navDraweropen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex items-center justify-between p-4 bg-[#121239] text-white">
+          <h1 className="text-lg font-semibold captilize">Navigation Menu</h1>
+          <button onClick={toggleNavDrawerOpen}>
+            <IoMdClose className="h-6 w-6 " />
+          </button>
+        </div>
+        <div className="p-4">
+          <nav className="flex flex-col gap-4">
+            <Link to="/" className="block text-black hover:text-gray-800">
+              Home
+            </Link>
+            <Link to="/shop" className="block text-black hover:text-gray-800">
+              Shop
+            </Link>
+            <Link to="/track" className="block text-black hover:text-gray-800">
+              Track
+            </Link>
+
+            <Link
+              to="/contact"
+              className="block text-black hover:text-gray-800"
+            >
+              Contact
+            </Link>
+            <Link to="/about" className="block text-black hover:text-gray-800">
+              About
+            </Link>
+          </nav>
+        </div>
+      </div>
     </div>
   );
 };

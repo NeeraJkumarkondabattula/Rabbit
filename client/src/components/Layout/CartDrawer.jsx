@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import CartContent from "../Cart/CartContent";
 
 const CartDrawer = ({ drawerOpen, toggleDrawerOpen }) => {
   return (
@@ -15,12 +16,12 @@ const CartDrawer = ({ drawerOpen, toggleDrawerOpen }) => {
         </button>
       </div>
 
-      <div className="flex-grow h-full p-4 overflow-y-auto">
-        <h2>hell</h2>
+      <div className="flex-grow h-full pb-16 p-2 overflow-y-auto text-black">
+        <CartContent />
       </div>
 
-      <div className="p-4 sticky bottom-0">
-        <button className="bg-black text-white rounded w-full py-3 transition hover:bg-gray-800">
+      <div className="p-4 sticky bottom-0 bg-white">
+        <button className="bg-black text-white rounded w-full py-3 transition hover:bg-gray-800 font-semibold">
           Checkout
         </button>
         <p className="tracking-tighter text-gray-800 text-xs text-center py-1">
