@@ -9,9 +9,9 @@ import { IoCallOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <footer className=" py-12 bg-[#121212] text-white">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 px-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-5 px-8">
         <div className="col-span-4">
-          <h3 className="text-2xl text-white mb-4">Newsletter</h3>
+          <h3 className="text-2xl text-white mb-4 font-semibold">Newsletter</h3>
           <p className="text-gray-500 mb-6 text-sm">
             Be the first to hear about new products, exclusive events, and
             online offers.
@@ -31,67 +31,94 @@ const Footer = () => {
           </form>
         </div>
         <div className="col-span-2">
-          <h3 className="text-2xl text-white mb-4">Shop</h3>
+          <h3 className="text-2xl text-white mb-4 font-semibold">Shop</h3>
           <ul className="space-y-2 text-gray-500 text-sm">
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/sunscreen"
+                className="hover:text-white transition-colors"
+              >
                 Sunscreen
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link to="/serum" className="hover:text-white transition-colors">
                 Serum
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/facewash"
+                className="hover:text-white transition-colors"
+              >
                 Facewash
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/moisturizer"
+                className="hover:text-white transition-colors"
+              >
                 Moisturizer
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/lipbalm"
+                className="hover:text-white transition-colors"
+              >
                 Lipbalm
               </Link>
             </li>
           </ul>
         </div>
         <div className="col-span-3">
-          <h3 className="text-2xl text-white mb-4">Support</h3>
+          <h3 className="text-2xl text-white mb-4 font-semibold">Support</h3>
           <ul className="space-y-2 text-gray-500 text-sm">
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/product-disclaimer"
+                className="hover:text-white transition-colors"
+              >
                 Product Disclaimer
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/contact"
+                className="hover:text-white transition-colors"
+              >
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/terms-and-services"
+                className="hover:text-white transition-colors"
+              >
                 Terms of Service
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/retun-policy"
+                className="hover:text-white transition-colors"
+              >
                 Retun & Shipping Policy
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link
+                to="/privacy-policy"
+                className="hover:text-white transition-colors"
+              >
                 Privacy Policy
               </Link>
             </li>
           </ul>
         </div>
         <div className="col-span-3">
-          <h3 className="text-2xl text-white mb-4">Follow Us</h3>
+          <h3 className="text-2xl text-white mb-4 font-semibold">Follow Us</h3>
           <ul className="space-x-2 text-gray-500 flex text-sm">
             <li>
               <Link
@@ -116,7 +143,9 @@ const Footer = () => {
             </li>
           </ul>
           <div className=" items-center text-gray-500 mt-6">
-            <h3 className="text-2xl text-white mb-4">Contact Us</h3>
+            <h3 className="text-2xl text-white mb-4 font-semibold">
+              Contact Us
+            </h3>
             <Link to="mailto:info@reginaldmen.com" className="block">
               <MdOutlineMail className="w-6 h-5 inline-block text-sm" />{" "}
               info@reginaldmen.com
