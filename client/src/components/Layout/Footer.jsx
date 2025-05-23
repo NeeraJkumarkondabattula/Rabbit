@@ -5,10 +5,11 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
+import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <footer className=" py-12 bg-[#121212] text-white">
+    <footer className=" py-10 bg-[#121212] text-white">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-5 px-8">
         <div className="col-span-4">
           <h3 className="text-2xl text-white mb-4 font-semibold">Newsletter</h3>
@@ -154,10 +155,15 @@ const Footer = () => {
               <IoCallOutline className="w-6 h-5 inline-block text-sm" /> +91
               8019755437
             </Link>
+            <div className="block">
+              <GrLocation className="w-6 h-5 inline-block text-sm" /> Plot No
+              194, Ayyappa Society Junction, Road No 38,Madhapur, Hyderabad,
+              Rangareddy, Telangana, 500081
+            </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto pt-12 px-4 py-2">
+      <div className="container mx-auto pt-4 px-4 py-2 border-t mt-8">
         <p className="tracking-tighter text-sm text-gray-300 text-center">
           © 2025 Reginald Men, All Rights Reserved.
         </p>
