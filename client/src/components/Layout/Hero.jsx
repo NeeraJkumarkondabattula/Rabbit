@@ -4,11 +4,7 @@ import hero from "../../assets/Hero.png";
 const Hero = () => {
   return (
     <section className="relative">
-      <img
-        src={hero}
-        alt=""
-        className="w-full h-[400px] md:h-[520px] lg:h-[680px] object-cover"
-      />
+      <img src={hero} alt="" className="w-full h-auto object-contain" />
       <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
         <div className="text-center text-white p-8">
           <h1 className="text-6xl md:text-7xl lg:text-9xl font-bold tracking-tight uppercase mb-2 mx-auto leading-none w-3/4">
